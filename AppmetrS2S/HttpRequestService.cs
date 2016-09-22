@@ -28,7 +28,7 @@ namespace AppmetrS2S
 
         public static bool SendRequest(String httpURL, String token, Batch batch)
         {
-            var @params = new Dictionary<String, String>(2);
+            var @params = new Dictionary<String, String>(3);
             @params.Add("method", ServerMethodName);
             @params.Add("token", token);
             @params.Add("timestamp", Convert.ToString(Utils.GetNowUnixTimestamp()));
